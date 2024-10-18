@@ -4,9 +4,9 @@ namespace TechChallenge.Domain.Interfaces.Repository
 {
     public interface IBaseRepository<T> where T : BaseEntity
     {
-        Task<T> GetById(Guid id);
-        Task<IEnumerable<T>> Get(T entityFilter, List<string>? attributesToIgnore, bool useLikeOperationInStrings, bool considerNullAttributes, int page, int pageSize);
         Task<T> Create(T entity);
+        Task<T?> GetById(Guid id);
+        Task<IEnumerable<T>> Get(T entityFilter, List<string>? attributesToIgnore, bool useLikeOperationInStrings, bool considerNullAttributes, int page, int pageSize);
         Task<T> Update(Guid id, T entity);
         Task<T> Delete(Guid id);
         Task<bool> Exists(Guid id);

@@ -6,4 +6,24 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Shared\Behavior\" />
+    <Folder Include="Shared\Exceptions\" />
+    <Folder Include="Services\" />
+    <Folder Include="UseCases\DeleteContact\" />
+    <Folder Include="UseCases\GetContact\" />
+    <Folder Include="UseCases\UpdateContact\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechChallenge.Domain\TechChallenge.Domain.csproj" />
+    <ProjectReference Include="..\TechChallenge.Persistance\TechChallenge.Persistance.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -11,15 +11,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{52017991-8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{A4368530-8D5C-4801-8BEA-8E54873343DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Application", "TechChallenge.Application\TechChallenge.Application.csproj", "{54C23B8D-8196-4C2B-B0D0-6A1E2BBEC188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.Application", "TechChallenge.Application\TechChallenge.Application.csproj", "{54C23B8D-8196-4C2B-B0D0-6A1E2BBEC188}"
+	ProjectSection(ProjectDependencies) = postProject
+		{39E9ED36-E0B5-4940-B5D4-27CC807C208A} = {39E9ED36-E0B5-4940-B5D4-27CC807C208A}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Domain", "TechChallenge.Domain\TechChallenge.Domain.csproj", "{39E9ED36-E0B5-4940-B5D4-27CC807C208A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.Domain", "TechChallenge.Domain\TechChallenge.Domain.csproj", "{39E9ED36-E0B5-4940-B5D4-27CC807C208A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.Persistance", "TechChallenge.Persistance\TechChallenge.Persistance.csproj", "{903C59C2-77FA-43A1-AE01-DB408862B1F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.Persistance", "TechChallenge.Persistance\TechChallenge.Persistance.csproj", "{903C59C2-77FA-43A1-AE01-DB408862B1F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.WebApi", "TechChallenge.WebApi\TechChallenge.WebApi.csproj", "{CB41136B-1D07-4FA6-AF38-6A52EA6BBC08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.WebApi", "TechChallenge.WebApi\TechChallenge.WebApi.csproj", "{CB41136B-1D07-4FA6-AF38-6A52EA6BBC08}"
+	ProjectSection(ProjectDependencies) = postProject
+		{54C23B8D-8196-4C2B-B0D0-6A1E2BBEC188} = {54C23B8D-8196-4C2B-B0D0-6A1E2BBEC188}
+		{903C59C2-77FA-43A1-AE01-DB408862B1F2} = {903C59C2-77FA-43A1-AE01-DB408862B1F2}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechChallenge.UnitTest", "TechChallenge.UnitTest\TechChallenge.UnitTest.csproj", "{86659D76-44B6-4F8E-B1BD-02079D77C758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechChallenge.UnitTest", "TechChallenge.UnitTest\TechChallenge.UnitTest.csproj", "{86659D76-44B6-4F8E-B1BD-02079D77C758}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

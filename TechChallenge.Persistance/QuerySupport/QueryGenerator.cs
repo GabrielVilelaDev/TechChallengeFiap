@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
+﻿using System.Linq.Expressions;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TechChallenge.Persistance.QuerySupport
 {
@@ -96,7 +91,7 @@ namespace TechChallenge.Persistance.QuerySupport
 
             if (useLikeOperationInStrings)
             {
-                var containsMethod = typeof(string).GetMethod("Contains", new[] { typeof(string) });
+                var containsMethod = typeof(string).GetMethod("Contains", [typeof(string)]);
                 return Expression.Call(propertyExpression, containsMethod!, Expression.Constant(value));
             }
 

@@ -2,8 +2,8 @@
 
 namespace TechChallenge.Domain.Interfaces.Repository
 {
-    public interface IContactRepository<T> : IBaseRepository<T> where T : BaseEntity
+    public interface IContactRepository<T> : IBaseRepository<T> where T : ContactEntity
     {
-        Task<T> GetByPhoneNumber(string phoneNumber);
+        Task<T?> GetByPhoneNumber(string phoneNumber);
     }
 }

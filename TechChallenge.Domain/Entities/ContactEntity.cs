@@ -1,16 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using TechChallenge.Domain.Attributes;
 
 namespace TechChallenge.Domain.Entities
 {
     public record ContactEntity: BaseEntity
     {
+        [Required]
         public string? Name { get; set; }
-        public string? Prefix { get; set; }
-        public string? DDD { get; set; }
+        [Required]
+        [BrazilPhoneNumber]
         public string? PhoneNumber { get; set; }
+        public Guid IdArea { get; set; }
+
+        #region Relationship
+        public virtual AreaEntity? Area { get; set; }
+        #endregion
     }
 }
