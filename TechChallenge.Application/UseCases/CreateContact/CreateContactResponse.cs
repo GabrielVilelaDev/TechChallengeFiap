@@ -9,6 +9,7 @@ namespace TechChallenge.Application.UseCases.CreateContact
 {
     public sealed record CreateContactResponse
     {
+        public Guid Id { get; set; }
         public string? Name { get; set; }
         public string? PhoneNumber { get; set; }
         public Guid IdArea { get; set; }

@@ -7,12 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Shared\Behavior\" />
     <Folder Include="Shared\Exceptions\" />
     <Folder Include="Services\" />
-    <Folder Include="UseCases\DeleteContact\" />
-    <Folder Include="UseCases\GetContact\" />
-    <Folder Include="UseCases\UpdateContact\" />
   </ItemGroup>
 
   <ItemGroup>
